@@ -70,7 +70,7 @@ class TimeRangePicker extends StatefulWidget {
 
   /// Background color for active AM-PM toggle
   /// default was blue accent
-  final Color activeBgColor;
+  final List<Color> activeBgColor;
 
   /// Background color for inactive AM-PM toggle
   /// default was grey
@@ -178,8 +178,8 @@ class _TimeRangePickerState extends State<TimeRangePicker>
   var isEdit = List<bool>.empty(growable: true);
   var textControllers = List<TextEditingController>.empty(growable: true);
   var textFocus = List<FocusNode>.empty(growable: true);
-  var fromIndex = 0;
-  var toIndex = 0;
+  Int? fromIndex = 0;
+  Int? toIndex = 0;
 
   @override
   void initState() {
