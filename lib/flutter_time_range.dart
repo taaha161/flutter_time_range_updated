@@ -178,8 +178,8 @@ class _TimeRangePickerState extends State<TimeRangePicker>
   var isEdit = List<bool>.empty(growable: true);
   var textControllers = List<TextEditingController>.empty(growable: true);
   var textFocus = List<FocusNode>.empty(growable: true);
-  Int? fromIndex = 0;
-  Int? toIndex = 0;
+  var fromIndex = 0;
+  var toIndex = 0;
 
   @override
   void initState() {
@@ -304,7 +304,7 @@ class _TimeRangePickerState extends State<TimeRangePicker>
                                     labels: ['AM', 'PM'],
                                     initialLabelIndex: fromIndex,
                                     onToggle: (index) {
-                                      fromIndex = index;
+                                      fromIndex = index ?? 0;
                                     },
                                   ),
                                 ),
@@ -465,7 +465,7 @@ class _TimeRangePickerState extends State<TimeRangePicker>
                                     labels: ['AM', 'PM'],
                                     initialLabelIndex: toIndex,
                                     onToggle: (index) {
-                                      toIndex = index;
+                                      toIndex = index ?? 0;
                                     },
                                   ),
                                 ),
