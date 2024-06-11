@@ -70,7 +70,7 @@ class TimeRangePicker extends StatefulWidget {
 
   /// Background color for active AM-PM toggle
   /// default was blue accent
-  final List<Color>? activeBgColor;
+  final Color activeBgColor;
 
   /// Background color for inactive AM-PM toggle
   /// default was grey
@@ -297,7 +297,7 @@ class _TimeRangePickerState extends State<TimeRangePicker>
                                     minWidth: 90.0,
                                     minHeight: 30,
                                     cornerRadius: 20.0,
-                                    activeBgColor: widget.activeBgColor,
+                                    activeBgColor: [widget.activeBgColor],
                                     activeFgColor: widget.activeFgColor,
                                     inactiveBgColor: widget.inactiveBgColor,
                                     inactiveFgColor: widget.inactiveFgColor,
