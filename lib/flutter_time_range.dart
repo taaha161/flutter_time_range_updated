@@ -70,7 +70,7 @@ class TimeRangePicker extends StatefulWidget {
 
   /// Background color for active AM-PM toggle
   /// default was blue accent
-  final List<Color> activeBgColor;
+  final List<Color>? activeBgColor;
 
   /// Background color for inactive AM-PM toggle
   /// default was grey
